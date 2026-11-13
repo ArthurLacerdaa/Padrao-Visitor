@@ -1,10 +1,10 @@
 package padroescomportamentais.visitor;
 
-public class Curso {
+public class Raca {
 
     private String nome;
 
-    public Curso(String nome) {
+    public Raca(String nome) {
         this.nome = nome;
     }
 

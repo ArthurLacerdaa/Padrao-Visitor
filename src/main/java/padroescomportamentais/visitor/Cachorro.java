@@ -1,15 +1,15 @@
 package padroescomportamentais.visitor;
 
-public class Funcionario implements Pessoa {
+public class Cachorro implements Animal {
 
     private int codigo;
     private String nome;
-    private float salario;
+    private Raca raca;
 
-    public Funcionario(int codigo, String nome, float salario) {
+    public Cachorro(int codigo, String nome, Raca raca) {
         this.codigo = codigo;
         this.nome = nome;
-        this.salario = salario;
+        this.raca = raca;
     }
 
     public int getCodigo() {
@@ -20,12 +20,12 @@ public class Funcionario implements Pessoa {
         return nome;
     }
 
-    public float getSalario() {
-        return salario;
+    public String getNomeRaca() {
+        return this.raca.getNome();
     }
 
     public String aceitar(Visitor visitor) {
-        return visitor.exibirFuncionario(this);
+        return visitor.exibirCachorro(this);
     }
 
 }

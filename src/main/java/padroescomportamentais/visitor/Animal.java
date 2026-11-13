@@ -1,5 +1,5 @@
 package padroescomportamentais.visitor;
 
-public interface Pessoa {
+public interface Animal {
     String aceitar(Visitor visitor);
 }
